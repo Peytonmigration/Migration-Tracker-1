@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MainApp from './MainApp.jsx'
-import { Duck } from 'lucide-react'
+import { Bird } from 'lucide-react'
 
 export default function App(){
   const [showSplash, setShowSplash] = useState(true)
@@ -13,7 +13,7 @@ export default function App(){
         </div>
         <h1 className="mt-6 text-3xl font-bold tracking-tight text-neutral-900">Migration Tracker</h1>
         <p className="text-neutral-600 mt-2 text-sm text-center max-w-sm">Real-time migration tracking, hunt logging, and incognito tools for serious waterfowlers.</p>
-        <Duck className="mt-4 w-6 h-6 text-neutral-700 animate-pulse" />
+        <Bird className="mt-4 w-6 h-6 text-neutral-700 animate-pulse" />
       </div>
     )
   }

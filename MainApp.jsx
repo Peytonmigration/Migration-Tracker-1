@@ -1,14 +1,14 @@
 
 import React, { useEffect, useMemo, useState } from "react";
-import { Button } from "./components/ui/button.jsx";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card.jsx";
-import { Input } from "./components/ui/input.jsx";
-import { Textarea } from "./components/ui/textarea.jsx";
-import { Badge } from "./components/ui/badge.jsx";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs.jsx";
-import { Switch } from "./components/ui/switch.jsx";
-import { Label } from "./components/ui/label.jsx";
-import { Duck, Eye, EyeOff, Globe2, Lock, MapPin, Thermometer, Trash2, CalendarDays, Plus, Target } from "lucide-react";
+import { Button } from "./button.jsx";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card.jsx";
+import { Input } from "./input.jsx";
+import { Textarea } from "./textarea.jsx";
+import { Badge } from "./badge.jsx";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./tabs.jsx";
+import { Switch } from "./switch.jsx";
+import { Label } from "./label.jsx";
+import { Bird, Eye, EyeOff, Globe as Globe2, Lock, MapPin, Thermometer, Trash2, CalendarDays, Plus, Target } from "lucide-react";
 
 const LS = {
   INCOGNITO: "mt_incognito_mode",
@@ -158,7 +158,7 @@ export default function MainApp(){
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-          <Duck className="w-6 h-6"/>
+          <Bird className="w-6 h-6"/>
           <div className="font-bold tracking-tight text-lg">Migration Tracker</div>
           <Badge>Incognito Mode</Badge>
           <div className="ml-auto flex items-center gap-3">
@@ -287,7 +287,7 @@ export default function MainApp(){
                         <div className="text-sm text-neutral-700 mt-1">
                           <span className="inline-flex items-center gap-1 mr-3"><Thermometer className="w-4 h-4"/>{h.weather}</span>
                           {h.spot && <span className="inline-flex items-center gap-1 mr-3"><MapPin className="w-4 h-4"/>{h.spot}</span>}
-                          <span className="inline-flex items-center gap-1"><Duck className="w-4 h-4"/>{specLine} • Hunters: {h.hunters} • Total: {total}</span>
+                          <span className="inline-flex items-center gap-1"><Bird className="w-4 h-4"/>{specLine} • Hunters: {h.hunters} • Total: {total}</span>
                         </div>
                         {h.notes && <p className="mt-1 text-sm text-neutral-600">{h.notes}</p>}
                         <Button variant="destructive" size="sm" className="mt-2" onClick={()=> removeHunt(h.id)}>Remove</Button>
