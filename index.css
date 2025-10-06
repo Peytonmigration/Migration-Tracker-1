@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* basic card styles */
+.card { @apply rounded-2xl border bg-white shadow-sm; }
+.card-header { @apply p-4 border-b rounded-t-2xl; }
+.card-title { @apply font-semibold text-lg; }
+.card-description { @apply text-sm text-neutral-500; }
+.card-content { @apply p-4; }
+.card-footer { @apply p-4 border-t rounded-b-2xl; }
+.btn { @apply inline-flex items-center justify-center gap-2 px-3 py-2 rounded-xl border bg-white hover:bg-neutral-50; }
+.btn.primary { @apply bg-neutral-900 text-white hover:bg-black; }
+.badge { @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full border; }
